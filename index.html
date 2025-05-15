@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domino's parnaíba</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="bg-white dark:bg-gray-800 antialiased">
+  <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0 py-4">
+    <div class="flex items-center justify-between">
+
+      <div class="flex items-center space-x-8">
+        <div class="shrink-0">
+          <a href="#" title="" class="">
+            <img class="block w-auto h-8 dark:hidden" src="domino's parnaíba.png" alt="logo">
+            <img class="hidden w-auto h-8 dark:block" src="domino's parnaíba.png" alt="logo">
+          </a>
+        </div>
+
+        <ul class="hidden lg:flex items-center justify-start gap-6 md:gap-8 py-3 sm:justify-center">
+          <li>
+            <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+              Pedir Minha Pizza
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+              Cardápio
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+              Promoções
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a href="#" title="" class="text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+              Acompanhar Pedido
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a href="#" title="" class="text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+              Ver Dominos´s Mais Proximo 
+              </a>
+            </li>  
+
+      <div class="flex items-center lg:space-x-2">
+
+        <button id="myCartDropdownButton1" data-dropdown-toggle="myCartDropdown1" type="button" class="inline-flex items-center rounded-lg justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium leading-none text-gray-900 dark:text-white">
+          <span class="sr-only">
+            Cart
+          </span>
+          <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+          </svg> 
+          <span class="hidden sm:flex">Meu Carrinho</span>
+          <svg class="hidden sm:flex w-4 h-4 text-gray-900 dark:text-white ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+          </svg>              
+        </button>
+
+        <div id="myCartDropdown1" class="hidden z-10 mx-auto max-w-sm space-y-4 overflow-hidden rounded-lg bg-white p-4 antialiased shadow-lg dark:bg-gray-800">
+          <div class="grid grid-cols-2">
+            <div>
+              <a href="#" class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Nordestina</a>
+              <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">R$ 50,00</p>
+            </div>
+      
+            <div class="flex items-center justify-end gap-6">
+              <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 1</p>
+      
+              <button data-tooltip-target="tooltipRemoveItem1a" type="button" class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                <span class="sr-only"> Remove </span>
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="tooltipRemoveItem1a" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                Remove item
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="grid grid-cols-2">
+            <div>
+              <a href="#" class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Moda Da Casa</a>
+              <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">R$ 53,00</p>
+            </div>
+      
+            <div class="flex items-center justify-end gap-6">
+              <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 1</p>
+      
+              <button data-tooltip-target="tooltipRemoveItem2a" type="button" class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                <span class="sr-only"> Remove </span>
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="tooltipRemoveItem2a" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                Remove item
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="grid grid-cols-2">
+            <div>
+              <a href="#" class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Peperoni</a>
+              <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">R$ 65,00</p>
+            </div>
+      
+            <div class="flex items-center justify-end gap-6">
+              <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 2</p>
+      
+              <button data-tooltip-target="tooltipRemoveItem3b" type="button" class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                <span class="sr-only"> Remove </span>
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="tooltipRemoveItem3b" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                Remove item
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="grid grid-cols-2">
+            <div>
+              <a href="#" class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Frango Catupiry</a>
+              <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">R$ 48,50</p>
+            </div>
+      
+            <div class="flex items-center justify-end gap-6">
+              <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 1</p>
+      
+              <button data-tooltip-target="tooltipRemoveItem4b" type="button" class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                <span class="sr-only"> Remove </span>
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="tooltipRemoveItem4b" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                Remove item
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="grid grid-cols-2">
+            <div>
+              <a href="#" class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Nordescheese"</a>
+              <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">R$ 46,50</p>
+            </div>
+      
+            <div class="flex items-center justify-end gap-6">
+              <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 3</p>
+      
+              <button data-tooltip-target="tooltipRemoveItem5b" type="button" class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                <span class="sr-only"> Remove </span>
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="tooltipRemoveItem5b" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                Remove item
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+      
+          <a href="#" title="" class="mb-2 me-2 inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" role="button"> Fazer Pedidos </a>
+        </div>
+
+        <button id="userDropdownButton1" data-dropdown-toggle="userDropdown1" type="button" class="inline-flex items-center rounded-lg justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium leading-none text-gray-900 dark:text-white">
+          <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+          </svg>              
+          Conta
+          <svg class="w-4 h-4 text-gray-900 dark:text-white ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+          </svg> 
+        </button>
+
+        <div id="userDropdown1" class="hidden z-10 w-56 divide-y divide-gray-100 overflow-hidden overflow-y-auto rounded-lg bg-white antialiased shadow dark:divide-gray-600 dark:bg-gray-700">
+          <ul class="p-2 text-start text-sm font-medium text-gray-900 dark:text-white">
+            <li><a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Minha Conta </a></li>
+            <li><a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Meus Pedidos </a></li>
+            <li><a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Cofiguração </a></li>
+            <li><a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Favoritos </a></li>
+            <li><a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Endereço De Entrega </a></li>
+            <li><a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Dados De Faturamento </a></li>
+          </ul>
+      
+          <div class="p-2 text-sm font-medium text-gray-900 dark:text-white">
+            <a href="#" title="" class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600"> Sair </a>
+          </div>
+        </div>
+
+        <button type="button" data-collapse-toggle="ecommerce-navbar-menu-1" aria-controls="ecommerce-navbar-menu-1" aria-expanded="false" class="inline-flex lg:hidden items-center justify-center hover:bg-gray-100 rounded-md dark:hover:bg-gray-700 p-2 text-gray-900 dark:text-white">
+          <span class="sr-only">
+            Open Menu
+          </span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+          </svg>                
+        </button>
+      </div>
+    </div>
+
+    <div id="ecommerce-navbar-menu-1" class="bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border border-gray-200 rounded-lg py-3 hidden px-4 mt-4">
+      <ul class="text-gray-900 dark:text-white text-sm font-medium dark:text-white space-y-3">
+        <li>
+          <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Lellos Esfiharia e Pizzaria</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Best Sellers</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Gift Ideas</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Games</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Electronics</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Home & Garden</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="bg-gray-100">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center">
+    <h2 class="mb-6 text-xl font-bold text-blue-900 uppercase">Escolha sua forma de entrega</h2>
+    <div class="flex items-center justify-center space-x-4">
+      <a href="#" class="px-6 py-3 bg-red-600 text-white font-bold rounded-md hover:bg-red-700">
+        Delivery
+      </a>
+      <span class="text-gray-500 font-semibold italic">ou</span>
+      <a href="#" class="px-6 py-3 bg-red-600 text-white font-bold rounded-md hover:bg-red-700">
+        Buscar na loja
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl">
+    
+    <div class="grid grid-cols-3 gap-2">
+    
+      <div class="col-span-2">
+        <img src="pizza 1.png" alt="Promoção Principal" class="w-full h-[420px] object-cover rounded-lg">
+      </div>
+      
+      <div class="flex flex-col gap-2">
+        <img src="pizza 2.png" alt="Desconto 40%" class="w-full h-[206px] object-cover rounded-lg">
+        <img src="pizza 3.png" alt="Pizza + Refri" class="w-full h-[206px] object-cover rounded-lg">
+      </div>
+    </div>
+
+    <div class="mt-2">
+      <img src="pizza 4.png" alt="Pizza Grande R$49,90" class="w-full h-[180px] object-cover rounded-lg">
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Fale Conosco</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        Está com um problema técnico? Quer enviar um feedback sobre algum recurso em teste? Precisa de detalhes sobre nosso plano Empresarial? Fale com a gente.
+      </p>
+      <form action="#" class="space-y-8">
+          <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Seu e-mail</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="nome@exemplo.com" required>
+          </div>
+          <div>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Assunto</label>
+              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Nos diga como podemos ajudar" required>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Sua mensagem</label>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Escreva seu comentário..."></textarea>
+          </div>
+          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+              Enviar mensagem
+          </button>
+      </form>
+  </div>
+</section>
+<footer class="p-6 bg-white md:p-8 lg:p-10 dark:bg-gray-800 text-sm text-gray-700 dark:text-gray-300">
+  <div class="max-w-screen-xl mx-auto text-center">
+    <div class="flex flex-wrap justify-center gap-6 mb-6 text-sm font-semibold text-gray-900 dark:text-white">
+      <a href="#" class="hover:underline">Internacional</a>
+      <a href="#" class="hover:underline">Sobre a Pizza</a>
+      <a href="#" class="hover:underline">Políticas de Privacidade</a>
+      <a href="#" class="hover:underline">Seja um Franqueado</a>
+      <a href="#" class="hover:underline">Fale Conosco</a>
+      <a href="#" class="hover:underline">Termos de Uso</a>
+    </div>
+
+    <div class="flex justify-center items-center mb-4">
+      <img src="cocacola.png" alt="Coca-Cola" class="h-8 mr-2" />
+      <span class="text-base font-semibold">Finalize o seu pedido com uma bebida!</span>
+    </div>
+
+    <div class="flex justify-center gap-4 mb-6 text-2xl text-gray-900 dark:text-white">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <p class="mb-4 max-w-4xl mx-auto text-sm text-justify leading-relaxed">
+      Serviço disponível nas áreas de entrega Domino’s Pizza, todos os dias, de acordo com o horário de funcionamento de cada loja. A Domino’s Pizza Brasil se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos <strong>CONTÊM GLÚTEN</strong>. Alérgicos: todos os nossos produtos contêm ou podem conter traços de Trigo, Ovos, Leite e Soja. As formas de pagamento variam de acordo com cada loja. Imagens meramente ilustrativas. Consulte se sua loja de preferência pratica a promoção escolhida. Em caso de dúvidas, consulte nosso SAC: <a href="mailto:relacionamento@dominos.com.br" class="text-blue-600 hover:underline">relacionamento@dominos.com.br</a>.
+    </p>
+
+    <p class="mb-4 text-sm">
+      *Preços "a partir de R$40,00" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.
+    </p>
+
+    <p class="mb-4">
+      <strong>DOMINO’S PIZZA BRASIL</strong>, Av. das Américas, 500 - Bloco 7 – 3º andar – Barra da Tijuca, Rio de Janeiro/RJ - 22640-100
+    </p>
+
+    <p class="mb-4">
+      S.A.C: Dúvidas, reclamações, sugestões e/ou elogios envie um e-mail para: <a href="mailto:relacionamento@dominos.com.br" class="text-blue-600 hover:underline">relacionamento@dominos.com.br</a>
+    </p>
+
+    <p class="mb-4">
+      Informações sobre o uso de dados pessoais e pedidos de descadastramento do banco de dados, <a href="#" class="text-blue-600 hover:underline">clique aqui</a> - Encarregado de Dados.
+    </p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
